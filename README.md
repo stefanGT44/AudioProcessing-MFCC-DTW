@@ -12,8 +12,7 @@ Some text
 This project was an assignment as part of the course - Speech recognition at the Faculty of Computer Science in Belgrade. All app functionalities were defined in the assignment specifications.
 
 ## Download
-You can download the .jar files [here](downloads/AudioVisualizerHistogram.zip).<br>
-To run the AudioVisualizerPlayer.jar it must be within the same folder as the audioFiles folder.
+You can download the .jar files [here](downloads/MFCC.zip).<br>
 
 ## Contributors
 - Stefan Ginic - <stefangwars@gmail.com>
