@@ -1,0 +1,243 @@
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+.root {
+	-fx-background-image: url("hexa.jpg");
+}
+
+.progress-bar > .track {
+  -fx-text-box-border: #000000;
+  -fx-control-inner-background: #161616;
+}
+
+.progress-bar {
+    -fx-background-color: #ff790c;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #ff790c;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.8;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.combo-box{
+	-fx-base: #ff7b00; 
+}
+
+.separator {
+	-fx-base: #6a6e70;
+	-fx-background-color: #1d1d1d;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.list-view {
+	-fx-base: #1d1d1d;
+	-fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #ff8323;
+    -fx-padding: 1;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+	-fx-background-color: #1c1c1c;
+	-fx-text-fill:white;
+}
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.border-pane {
+	-fx-background-color: derive(#1d1d1d,20%);
+}
+
+.grid-pane {
+	-fx-background-color: derive(#1d1d1d,20%);
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+    -fx-background-color: derive(#1d1d1d,20%);
+    
+}
+
+.scroll-pane {
+	-fx-background-color: #282828;
+	-fx-base: #282828;
+	-fx-control-inner-background: #282828;
+}
+
+.pane {
+	-fx-background-color: derive(#1d1d1d,20%);
+	-fx-border-color: derive(#1d1d1d,20%);
+}
+
+.hbox {
+	-fx-background-color: derive(#1d1d1d,20%);
+	-fx-border-color: derive(#1d1d1d,20%);
+}
+
+.vbox {
+	-fx-base: transparent;
+	-fx-background-color: transparent;
+}
+
+.split-pane {
+	-fx-base: transparent;
+	-fx-background-color: derive(#1d1d1d,15%);
+}
+
+.border-pane {
+	-fx-background-color: derive(#1d1d1d,20%);
+}
+
+.insets {
+	-fx-background-color: derive(#1d1d1d,20%);
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,5%);
+    /*-fx-background-color: rgba(0, 19, 28, 0.9);*/
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.tool-bar {
+	-fx-background-color: rgba(29,29,29,0.8);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.text-field {
+	-fx-effect: innershadow(three-pass-box, #875520, 1, 1, 1, 1);
+	-fx-background-color: #161616;
+	-fx-base: #161616;
+	-fx-control-inner-background: #161616;
+	-fx-text-fill:white;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-prompt-text-fill: #474747;
+}
+
+.text-area {
+	-fx-effect: innershadow(three-pass-box, #1f4660, 1, 1, 1, 1);
+	-fx-background-color: #161616;
+	-fx-base: #161616;
+	-fx-control-inner-background: #161616;
+	-fx-text-fill:white;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* 
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {  
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #111111;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #474747;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: #6697c1, #6697c1;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.6;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
