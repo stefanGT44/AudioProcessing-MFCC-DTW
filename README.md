@@ -1,5 +1,5 @@
 # AudioProcessing-MFCC-DTW
-Some text
+This is a JavaFX desktop application for computing MFCC (Mel frequency cepstrum coefficients) of input words, and finding the most similar sounding words from the database using DTW (dynamic time warp).
 
 ## Overview
 
