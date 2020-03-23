@@ -10,13 +10,13 @@ The application supports .wav files as input, the user can also record sounds wi
 ## Implementation details<br>
 ### 1. End pointing
 Determining which 10ms windows of audio represent speech and which do not.
-#### * Calculating noise
+#### - Calculating noise
 It is assumed that the first 100ms of input audio don't contain speech. Noise is computed by taking the average energy of samples within the 100ms window and adding one standard deviation.
-#### * Roughly detirmining speech windows
+#### - Roughly detirmining speech windows
 After calculating the noise boundary, the rest of the audio signal is analysed by 10ms windows. Using the noise boundary it is determined if a windows contains speech or not. If the average energy of samples in a window is higher than the noise boundary, the window contains speech. The result of this step is an array of 0s and 1s, where 1 represents a window containing speech and 0 otherwise.
-#### * Conservative Z smoothing
+#### - Conservative Z smoothing
 Because certain spikes of discontinued 1s or 0s can appear in the array, smoothing is applied. For a digit to maintain it's value, it is required that there are a certain amount of digits with the same value in a sequence or they are converted into the opposite value. The order of conversion (0->1 and 1->0) is important (results vary based on order). Conservative means that the order is 0->1, 1->0 - maintaining more information. After a conversion of 0s to 1s, if the length of the result sequence of 1s is < Z, the sequency is set to 0s.
-#### * ZCT (zero-crossing rate) filtering
+#### - ZCT (zero-crossing rate) filtering
 The zero-crossing rate is the rate of sign-changes along a signal within a certain time period, i.e., the rate at which the signal changes from positive to zero to negative or from negative to zero to positive. Some characteristics of speech tend to abruptly increase the ZCT, this is used to detect speech where it hasn't been detected using the noise boundary. 
 ### 2. Computing MFCCs
 
