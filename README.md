@@ -26,7 +26,7 @@ MFCCs (Mel frequency cepstrum coefficients) are commonly used as features in spe
 
 
 ## Sidenote
-This project was an assignment as part of the course - Speech recognition at the Faculty of Computer Science in Belgrade. All app functionalities were defined in the assignment specifications.
+This project was an assignment as part of the course - Speech recognition in the 5th semester at the Faculty of Computer Science in Belgrade. All app functionalities were defined in the assignment specifications.
 
 ## Download
 You can download the .jar files [here](downloads/MFCC.zip).<br>
